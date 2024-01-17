@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { Loader } from ".";
+
 import { useSession } from "next-auth/react";
 
 const UserInfo = () => {
