@@ -1,16 +1,9 @@
 import {
-  Dashboard,
-  Discover,
   Footer,
   Hero,
   Navbar,
   FreqAskQuest,
   SubscriptionPanel,
-  PaymentOptions,
-  PaymentPlan,
-  PaymentMethod,
-  CardDetails,
-  CheckoutPage,
   LogoCarousel,
 } from "@/components";
 import Image from "next/image";
