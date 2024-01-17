@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTheme } from '@mui/material';
-import { ResponsiveChoropleth } from '@nivo/geo';
+import { ChoroplethBoundFeature, ResponsiveChoropleth } from '@nivo/geo';
 import { geoFeatures } from './geoFeatures';
 
 type GeoData = {
@@ -46,8 +46,8 @@ type FeatureData = {
 
 
 // Custom Tooltip Component
-const CustomTooltip = ( {feature}: CustomTooltipProps ) => {
-    //console.log('FEATURE: ', feature.feature.label)
+const CustomTooltip = ({ feature }: { feature: ChoroplethBoundFeature }) => {
+    //console.log('FEATURE: ', feature)
     return (
       <div
         style={{
@@ -59,9 +59,9 @@ const CustomTooltip = ( {feature}: CustomTooltipProps ) => {
       >
         {feature ? (
           <>
-            <strong>Country: {feature.feature.label}</strong>
+            <strong>Country: {feature.label}</strong>
             <br />
-            Count: {feature.feature.value}
+            Count: {feature.value}
           </>
         ) : (
           'No data'
@@ -91,7 +91,7 @@ const GeographyChart: React.FC<IProps> = ({ isDashboard, data }: IProps) => {
       borderColor="#ffffff"
       colors="nivo"
       // Define the tooltip as a function
-      tooltip={(feature) => <CustomTooltip feature={feature} />}
+      tooltip={({ feature }: { feature: ChoroplethBoundFeature }) => <CustomTooltip feature={feature} />}
       legends={
         !isDashboard
           ? [
