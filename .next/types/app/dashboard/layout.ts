@@ -1,4 +1,4 @@
-// File: C:\Users\onat.postaci\Desktop\dss-project\app\dashboard\layout.tsx
+// File: C:\Users\onat.postaci\Desktop\dss-project-fr\app\dashboard\layout.tsx
 import * as entry from '../../../../app/dashboard/layout.js'
 import type { ResolvingMetadata } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

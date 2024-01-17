@@ -1,7 +1,9 @@
 "use client";
 import React, { useRef, useEffect } from "react";
 import { AccordionProps } from "@/types";
-import { ArrowDownIcon, ArrowUpIcon } from "@heroicons/react/24/outline";
+import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
+import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
+
 
 const Accordion = ({
   question,
@@ -40,9 +42,9 @@ const Accordion = ({
             </span>
             <div>
               {turn![idx] ? (
-                <ArrowUpIcon className="h-4 w-4 mx-2" />
+                <ArrowUpwardIcon />
               ) : (
-                <ArrowDownIcon className="h-4 w-4 mx-2" />
+                <ArrowDownwardIcon />
               )}
             </div>
           </div>

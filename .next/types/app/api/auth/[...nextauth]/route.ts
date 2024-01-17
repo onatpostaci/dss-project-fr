@@ -1,4 +1,4 @@
-// File: C:\Users\onat.postaci\Desktop\dss-project\app\api\auth\[...nextauth]\route.ts
+// File: C:\Users\onat.postaci\Desktop\dss-project-fr\app\api\auth\[...nextauth]\route.ts
 import * as entry from '../../../../../../app/api/auth/[...nextauth]/route.js'
 import type { NextRequest } from 'next/server.js'
 
