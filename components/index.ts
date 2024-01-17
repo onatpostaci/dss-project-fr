@@ -8,7 +8,6 @@ import CustomInput from "./CustomInput";
 import LoginModal from "./LoginModal";
 import Dashboard from "./dashboard/Dashboard";
 import SidebarItem from "./SidebarItem";
-import UserInfo from "./UserInfo";
 import AvatarChip from "./AvatarChip";
 import MessageBox from "./MessageBox";
 import FreqAskQuest from "./FreqAskQuest";
@@ -23,7 +22,6 @@ export {
   ChartComponent,
   Sidebar,
   FreqAskQuest,
-  UserInfo,
   MessageBox,
   AvatarChip,
   SidebarItem,
