@@ -3,7 +3,7 @@ import React from 'react'
 
 const Progress = () => {
   return (
-    <Box  m='20px' height="50vh" width={'70vw'} display={'flex'} flexDirection={'column'} alignItems={'center'} justifyContent={'center'}>
+    <Box  m='20px' height="50vh" width={'68vw'} display={'flex'} flexDirection={'column'} alignItems={'center'} justifyContent={'center'}>
         <CircularProgress />
     </Box>
   )

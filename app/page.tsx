@@ -10,11 +10,11 @@ import Image from "next/image";
 import { LogoItem } from "@/types";
 
 const logos = [
-  { src: "/pandas-logo.png", alt: "Logo 1", width: 150, height: 75 },
-  { src: "/nextjs.png", alt: "Logo 2", width: 150, height: 75 },
-  { src: "/chat-gpt-logo-png.png", alt: "Logo 3", width: 150, height: 75 },
-  { src: "/UE_Logo.png", alt: "Logo 4", width: 150, height: 75 },
-  { src: "/Python_logo.png", alt: "Logo 5", width: 150, height: 75 },
+  { src: "/pandas-logo.png", alt: "Logo 1", width: 100, height: 75 },
+  { src: "/nextjs.png", alt: "Logo 2", width: 100, height: 75 },
+  { src: "/chat-gpt-logo-png.png", alt: "Logo 3", width: 100, height: 75 },
+  { src: "/UE_Logo.png", alt: "Logo 4", width: 100, height: 75 },
+  { src: "/Python_logo.png", alt: "Logo 5", width: 100, height: 75 },
   // Add more logos as needed
 ];
 

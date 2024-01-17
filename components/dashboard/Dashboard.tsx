@@ -166,6 +166,12 @@ const Dashboard = () => {
             title="Dashboard"
             subtitle={`Welcome to the Data Analysis Dashboard`}
             />
+            <Box display={'flex'} alignItems={'center'} gap={'15px'}>
+              <Typography fontWeight={'bold'}>Download Template CSV</Typography>
+              <IconButton onClick={() => window.location.href = '/example.csv'}>
+                  <DownloadOutlined />
+              </IconButton>
+            </Box>
             
         </Box>
         <Box

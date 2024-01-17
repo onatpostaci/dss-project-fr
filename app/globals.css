@@ -272,21 +272,31 @@
 /* END: FAQ Panel styles */
 
 @keyframes scrollLogos {
-  0% {
-    transform: translateX(0);
+  from {
+    transform: translate3d(0, 0, 0);
   }
-  100% {
-    transform: translateX(-50%);
+  to {
+    transform: translate3d(calc(-100% / 2), 0, 0); /* Scroll through half since you duplicated the logos */
   }
 }
 
 .logo-carousel {
-  display: flex;
-  flex-wrap: nowrap;
+  white-space: nowrap; /* Ensures logos are in a single line */
+  overflow-x: hidden;
+  padding-left: same-as-header; /* Adjust this to match your header's alignment */
   animation: scrollLogos 30s linear infinite;
 }
 
 .logo-container {
-  display: flex;
-  flex: 0 0 200%; /* Set to twice the width to fit two sets of logos */
+  display: inline-flex; /* Use inline-flex to keep logos in line */
+  flex: none; /* Override any flex properties that may affect the layout */
+  animation: scrollLogos 30s linear infinite;
 }
+
+/* Ensure the logo images are displayed inline and centered */
+.logo-container > div {
+  display: inline-block;
+  vertical-align: middle;
+  /* Adjust padding or margin as needed */
+}
+
