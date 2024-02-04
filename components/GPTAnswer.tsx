@@ -17,7 +17,7 @@ const GPTAnswer = ({ promptText, isDataReceived }: IProps) => {
     setLoading(true);
     try {
       const prompt = promptText; // Replace with the actual prompt
-      const response = await axios.get('https://4b8xlsz8m3.execute-api.eu-north-1.amazonaws.com/prod/generate-suggestion', {
+      const response = await axios.get('https://z8tkllkjq3.execute-api.eu-north-1.amazonaws.com/prod/generate-suggestion', {
         params: { prompt }
       });
       setGptResponse(response.data.suggestion);
