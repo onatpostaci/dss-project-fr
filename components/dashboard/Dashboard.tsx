@@ -99,7 +99,7 @@ const Dashboard = () => {
       formData.append('file', file);
   
       // Replace 'your-endpoint-url' with the URL of your file upload endpoint
-      const response = await axios.post('https://4b8xlsz8m3.execute-api.eu-north-1.amazonaws.com/prod/upload', formData, {
+      const response = await axios.post('https://z8tkllkjq3.execute-api.eu-north-1.amazonaws.com/prod/upload', formData, {
         headers: {
           'Content-Type': 'multipart/form-data'
         }

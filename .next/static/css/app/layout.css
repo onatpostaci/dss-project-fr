@@ -589,9 +589,6 @@ video {
 .mt-6{
   margin-top: 1.5rem;
 }
-.mb-5{
-  margin-bottom: 1.25rem;
-}
 .block{
   display: block;
 }
@@ -636,9 +633,6 @@ video {
 }
 .max-w-sm{
   max-width: 24rem;
-}
-.max-w-none{
-  max-width: none;
 }
 .flex-1{
   flex: 1 1 0%;
@@ -730,11 +724,6 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
-}
-.space-x-16 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-x-reverse: 0;
-  margin-right: calc(4rem * var(--tw-space-x-reverse));
-  margin-left: calc(4rem * calc(1 - var(--tw-space-x-reverse)));
 }
 .overflow-hidden{
   overflow: hidden;
